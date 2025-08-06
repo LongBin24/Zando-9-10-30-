@@ -1,0 +1,19 @@
+div{
+    width: 500px;
+    background-color: antiquewhite;
+    padding: 50px;
+    /* padding គឺជាគម្លាតរវាង Conteint និង Bordy (Parent & chield) */
+    margin: 5px;
+    /* margin គឺជាគម្លាតរវាង ពី Element ទៅកាន់ element (បើដាក់ - វាទាញឡើងលើ ុំ បើដាក់+ករណីផ្សេង​​​    សម្រាប់ Margin-top: -50px)*/
+}
+.container{
+    width: 400Px;
+    height: 300px;
+}
+.box1{
+    background-color: beige;
+}
+.box2{
+
+
+}

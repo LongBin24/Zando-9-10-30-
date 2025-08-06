@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    /* រក្សទំំហំដែលបានកំណត់អោយនៅថេរអ្វីដែលបានកំណត់ */
+    box-sizing: border-box; 
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    display:flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.a1{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(78, 212, 212);
+    height: 600px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+
+}
+.b2{
+    width: 100%;
+    height: 100%;
+    height: 100px;
+
+    background-color:bisque;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(177, 177, 147);
+}
+.b2-4-5-7-8{
+    width: 50%;
+    background-color: rgb(138, 160, 187);
+
+}
+.b4-5-6-7-8{
+    width: 100%;
+    height: 50%;
+    margin-top: 1.5%;
+    background-color:bisque;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(138, 160, 187);
+
+}
+.b{
+    width: 50%;
+    background-color: aquamarine;
+    height: 100%;
+}
+.c3-6{
+    display:flex;
+    flex-direction: column;
+    gap: 2%;
+    
+}
+.c3{
+    background-color: bisque;
+    height: 29%;
+    width: 10px;
+}
+.c6{
+    width: 10px;
+    height: 69%;
+    background-color:blueviolet;
+}

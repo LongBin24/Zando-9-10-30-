@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cambodia Activities</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Menu bar */
+    .menu {
+      text-align: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .menu a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    .menu a.active {
+      color: #007bff;
+      border-bottom: 2px solid red;
+      padding-bottom: 3px;
+    }
+
+    /* Title */
+    .title {
+      text-align: center;
+      font-size: 36px;
+      margin: 30px 0 10px;
+    }
+
+    .underline {
+      text-align: center;
+      height: 3px;
+      width: 30px;
+      background: red;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    /* Activity grid */
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 0 30px 50px;
+    }
+
+    .activity {
+      display: flex;
+      width: 500px;
+      gap: 15px;
+    }
+
+    .activity img {
+      width: 180px;
+      height: 110px;
+      object-fit: cover;
+    }
+
+    .activity-text h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    .activity-text p {
+      margin: 0;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media screen and (max-width: 600px) {
+      .activity {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .activity img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu bar -->
+  <div class="menu">
+    <a href="../IMG/Link/about.html">EXPERIENCES</a>
+    <a href="../IMG/Link/MAP.html">MAP</a>
+    <a href="../IMG/Link/download.html">ARTICLES</a>
+    <a href="../IMG/Link/BOOKS.html">BOOKS</a>
+    <a href="../IMG/Link/Home.html" class="active">ACTIVITIES</a>
+    <a href="../IMG/Link/IN_DETAIL.html">IN DETAIL</a>
+    <a href="../IMG/Link/Contact.html">COMMUNITY</a>
+  </div>
+
+  <!-- Title -->
+  <div class="title">Cambodia activities</div>
+  <div class="underline"></div>
+
+  <!-- Activities -->
+  <div class="grid">
+    <!-- Activity 1 -->
+    <div class="activity">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Angkor_Wat_in_Siem_Reap%2C_Cambodia.jpg" alt="Angkor Temples">
+      <div class="activity-text">
+        <h3>Angkor Temples Small-Group Tour</h3>
+        <p>We start our adventure with a visit to Angkor Wat temple, easily the most...</p>
+      </div>
+    </div>
+
+    <!-- Activity 2 -->
+    <div class="activity">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Phare_Ponleu_Selpak_-_Cambodian_Circus_Show.jpg" alt="Circus">
+      <div class="activity-text">
+        <h3>Siem Reap Phare: The Cambodian Circus Show Admission Ticket</h3>
+        <p>Phare Ponleu Selpak (PPS), a non-...</p>
+      </div>
+    </div>
+
+    <!-- Activity 3 -->
+    <div class="activity">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Tuol_Sleng_Genocide_Museum_2009.jpg" alt="Killing Fields">
+      <div class="activity-text">
+        <h3>Phnom Penh Small-Group Tour: Genocide Museum, Killing Fields</h3>
+        <p>The day starts by learning about the tragic and fascinating recent history of...</p>
+      </div>
+    </div>
+
+    <!-- Activity 4 -->
+    <div class="activity">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Angkor_Wat_Cambodia.jpg" alt="Royal Temples">
+      <div class="activity-text">
+        <h3>Angkor Wat, The Royal Temples Private Day Tour from Siem Reap</h3>
+        <p>After hotel pickup by air-conditioned...</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
