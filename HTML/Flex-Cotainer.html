@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .flex-contaniner{
+            display: flex;
+            background-color: darkblue;
+              <!-- flex-direction: column-reverse; -->
+        }
+        .flex-contaniner>div{
+            background-color:#f1f1f1 ;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+            line-height: 75px;
+            font-size: 30px;
+
+        }
+    </style>
+    <p>flex-direction: row-reverse; stacks the flex item horlizontally ( but from right to left): </p>
+    <div class="flex-contaniner">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

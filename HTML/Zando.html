@@ -1,0 +1,1097 @@
+\<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Zando</title>
+    <link
+      rel="shortcut icon"
+      href="https://i.pinimg.com/736x/f5/8b/5f/f58b5f4e0a53c274272373a7b54e580d.jpg"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../CSS/Zando.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation-utility.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <!-- Demo styles -->
+  <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .autoplay-progress {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      z-index: 10;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: var(--swiper-theme-color);
+    }
+
+    .autoplay-progress svg {
+      --progress: 0;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      stroke-width: 4px;
+      stroke: var(--swiper-theme-color);
+      fill: none;
+      stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+      stroke-dasharray: 125.6;
+      transform: rotate(-90deg);
+    }
+
+    .mySwiper {
+      height: 100%;
+    }
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+
+      display: flex;
+      justify-content: center;
+    }
+    swiper-slide img {
+      display: block;
+    }
+  </style>
+
+  <body>
+    <!-- navigation -->
+    <nav class="navigation">
+      <!-- width all containner -->
+      <div class="containner-width nav-bar">
+        <!-- nav list in left navigation -->
+        <div class="nav-left">
+          <ul class="list-nav left-list">
+            <li>
+              <a href="">Women</a>
+            </li>
+            <li>
+              <a href="">Men</a>
+            </li>
+            <li>
+              <a href="">Boys</a>
+            </li>
+            <li>
+              <a class="cssanimation ca__fx-elasticStretch" href="">Girls</a>
+            </li>
+          </ul>
+        </div>
+        <!-- nav center navigation -->
+        <div class="nav-center">
+          <a href="">
+            <img
+              src="https://zandokh.com/images/ZANDO-NEW-LOGO-2025.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <!-- nav right navigation -->
+        <div class="nav-right">
+          <ul class="list-nav right-list">
+            <li>
+              <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="searching..." />
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-bell"></i>
+              </a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-heart"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            </li>
+            <li>
+              <a href="login.html">LOGIN</a>
+            </li>
+            <li>
+              <a href="">REGISTER</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="containner-width slide">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://zandokh.com/image/catalog/banner/2025/ZANDO/July/Extra%2050/28.07/update/70OFFSALE_Main%20(2160x1066).jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://zandokh.com/image/catalog/banner/2025/ZANDO/July/Extra%2050/28.07/update/50OFF_Main%20(2160x1066).jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="autoplay-progress">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const progressCircle = document.querySelector(".autoplay-progress svg");
+      const progressContent = document.querySelector(".autoplay-progress span");
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+          },
+        },
+      });
+    </script>
+
+    <article class="containner-width">
+      <div class="branch">
+        <div class="logo-branch">
+          <a href="">
+            <img
+              src="https://zandokh.com/image/catalog/logo/zando/ZandoNoBorder.jpg"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="logo-branch">
+          <img
+            src="https://zandokh.com/image/catalog/logo/ten11/Ten11NoBorder.jpg"
+            alt=""
+          />
+        </div>
+        <div class="logo-branch">
+          <img
+            src="https://zandokh.com/image/catalog/logo/gatoni/gatoni-logo.png"
+            alt=""
+          />
+        </div>
+        <div class="logo-branch">
+          <img
+            src="https://zandokh.com/image/catalog/logo/Routine/RoutineNoBorder.jpg"
+            alt=""
+          />
+        </div>
+        <div class="logo-branch">
+          <img
+            src="https://zandokh.com/image/catalog/logo/361/361NoBorder.jpg"
+            alt=""
+          />
+        </div>
+        <div class="logo-branch">
+          <img
+            src="https://zandokh.com/image/catalog/logo/sisburma/2025-07-22%2012.02.25.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </article>
+
+    <!-- life style top -->
+    <div class="containner-width lift-style">
+      <div class="lift-style-items">
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Category%20lifestyle,%20sportlife,%20smartcasual/July/3.jpg"
+          alt=""
+        />
+      </div>
+      <div class="lift-style-items">
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Category%20lifestyle,%20sportlife,%20smartcasual/July/1.jpg"
+          alt=""
+        />
+      </div>
+      <div class="lift-style-items">
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Category%20lifestyle,%20sportlife,%20smartcasual/July/2.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- life style bottom -->
+    <div class="containner-width lift-style">
+      <div class="lift-style-items-tops-bottoms">
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Category%20lifestyle,%20sportlife,%20smartcasual/July/4.jpg"
+          alt=""
+        />
+      </div>
+      <div class="lift-style-items-tops-bottoms">
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Category%20lifestyle,%20sportlife,%20smartcasual/July/5.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- block cart -->
+    <div class="containner-width" style="margin-top: 20px">
+      <div class="container">
+        <span class="text-container">
+          <span> ZANDO 10 Years, Infinite Style ✨ </span>
+          <a href="">Shop more</a>
+        </span>
+        <!-- cart container -->
+        <div
+          class="cart-container"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <!-- cart -->
+
+          <swiper-container
+            class="mySwiper"
+            slides-per-view="4"
+            centered-slides="false"
+            space-between="10"
+            navigation="true"
+          >
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <span class="txt-dis"> -30 %</span>
+                  <img
+                    src="https://zandokh.com/image/cache/catalog/products/2024-04/1222404371/Top%20(3)-cr-450x672.jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">TEN 11</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $5.68</span>
+                      <span>US $18.95</span>
+                    </span>
+
+                    <span class="">
+                      <span>T-shirt With Print </span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <span class="txt-dis"> -80 %</span>
+                  <img
+                    src="	https://zandokh.com/image/cache/catalog/products/2025-01/5232410002/IMG_0114-cr-450x672.jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">TEN 11</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $5.92</span>
+                      <span>US $20.59</span>
+                    </span>
+
+                    <span class="">
+                      <span>Oversized Hoodie With Print </span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <span class="txt-dis"> -40 %</span>
+                  <img
+                    src="https://zandokh.com/image/cache/catalog/products/2025-02/21224121047/5D_L1288-Edit-cr-450x672.jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">TEN 11</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $10.55</span>
+                      <span>US $17.59</span>
+                    </span>
+
+                    <span class="">
+                      <span>Unisex T-Shirts With Printed</span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <span class="txt-dis"> -80 %</span>
+                  <img
+                    src="	https://zandokh.com/image/cache/catalog/products/2025-02/22224121129/OSA_8435-cr-450x672.jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">361° Sport</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $11.39</span>
+                      <span>US $56.95</span>
+                    </span>
+
+                    <span class="">
+                      <span>Sport Life Windbreaker </span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide>
+          </swiper-container>
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+          <script>
+            const swiperEl = document.querySelector("swiper-container");
+            const swiper = swiperEl.swiper;
+
+            var appendNumber = 4;
+            var prependNumber = 1;
+            document
+              .querySelector(".prepend-2-slides")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                  "<swiper-slide>Slide " + --prependNumber + "</swiper-slide>",
+                  "<swiper-slide>Slide " + --prependNumber + "</swiper-slide>",
+                ]);
+              });
+            document
+              .querySelector(".prepend-slide")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                  "<swiper-slide>Slide " + --prependNumber + "</swiper-slide>"
+                );
+              });
+            document
+              .querySelector(".append-slide")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                  "<swiper-slide>Slide " + ++appendNumber + "</swiper-slide>"
+                );
+              });
+            document
+              .querySelector(".append-2-slides")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                  "<swiper-slide>Slide " + ++appendNumber + "</swiper-slide>",
+                  "<swiper-slide>Slide " + ++appendNumber + "</swiper-slide>",
+                ]);
+              });
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div class="containner-width" style="margin-top: 20px">
+      <div class="container">
+        <span class="text-container">
+          <span> Just In & Up to 50% Savings! 🌟 </span>
+          <a href="">Shop more</a>
+        </span>
+        <!-- cart container -->
+        <div class="cart-container">
+          <!-- cart -->
+
+          <swiper-container
+            class="mySwiper"
+            slides-per-view="4"
+            centered-slides="false"
+            space-between="10"
+            navigation="true"
+          >
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <span class="txt-dis"> -50 %</span>
+                  <img
+                    src="https://zandokh.com/image/cache/catalog/products/2025-01/2122411951/IMG_1488-cr-450x672.jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">TEN 11</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $12.97</span>
+                      <span>US $25.95</span>
+                    </span>
+
+                    <span class="">
+                      <span>Loose Fit Sweatshirt </span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <span class="txt-dis"> -50 %</span>
+                  <img
+                    src="https://zandokh.com/image/cache/catalog/products/2025-01/1222410007/IMG_11314-cr-450x672.jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">ZANDO</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $10.29</span>
+                      <span>US $20.59</span>
+                    </span>
+
+                    <span class="">
+                      <span>Skirt Trouser </span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <span class="txt-dis"> -50 %</span>
+                  <img
+                    src="https://zandokh.com/image/cache/catalog/products/2025-05/22225031341/DSC07305-cr-450x672.jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">ZANDO</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $12.97</span>
+                      <span>US $25.95</span>
+                    </span>
+
+                    <span class="">
+                      <span>Loose Fit Sweatshirt </span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <span class="txt-dis"> -70 %</span>
+                  <img
+                    src="	https://zandokh.com/image/cache/catalog/products/2025-02/1222412940/IMG_9663-cr-450x672.jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">ZANDO</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $5.38</span>
+                      <span>US $17.95</span>
+                    </span>
+
+                    <span class="">
+                      <span>Regular Blouse </span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide>
+          </swiper-container>
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+          <script>
+            const swiperEl = document.querySelector("swiper-container");
+            const swiper = swiperEl.swiper;
+
+            var appendNumber = 4;
+            var prependNumber = 1;
+            document
+              .querySelector(".prepend-2-slides")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                  "<swiper-slide>Slide " + --prependNumber + "</swiper-slide>",
+                  "<swiper-slide>Slide " + --prependNumber + "</swiper-slide>",
+                ]);
+              });
+            document
+              .querySelector(".prepend-slide")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                  "<swiper-slide>Slide " + --prependNumber + "</swiper-slide>"
+                );
+              });
+            document
+              .querySelector(".append-slide")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                  "<swiper-slide>Slide " + ++appendNumber + "</swiper-slide>"
+                );
+              });
+            document
+              .querySelector(".append-2-slides")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                  "<swiper-slide>Slide " + ++appendNumber + "</swiper-slide>",
+                  "<swiper-slide>Slide " + ++appendNumber + "</swiper-slide>",
+                ]);
+              });
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div class="containner-width" style="margin-top: 20px">
+      <div class="container">
+        <span class="text-container">
+          <span> Sip in Style, Stay Dry 🥤☔ </span>
+          <a href="">Shop more</a>
+        </span>
+        <!-- cart container -->
+        <div
+          class="cart-container"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <!-- cart -->
+
+          <swiper-container
+            class="mySwiper"
+            slides-per-view="4"
+            centered-slides="false"
+            space-between="10"
+            navigation="true"
+          >
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <span class="txt-dis"> -9.13 %</span>
+                  <img
+                    src="https://zandokh.com/image/catalog/products/2025-08/2522506759/Bilnd%20box%2002%20(3).jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">TEN 11</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $9.95</span>
+                      <span>US $10.95</span>
+                    </span>
+
+                    <span class="">
+                      <span>TEN11 Tumbler </span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <span class="txt-dis"> -15.44 %</span>
+                  <img
+                    src="	https://zandokh.com/image/cache/catalog/products/2025-08/2522506758/TEN11%20-%20thumbler%20Blind%20Box%2002%20(3)-cr-450x672.jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">TEN 11</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $10.95</span>
+                      <span>US $12.95</span>
+                    </span>
+
+                    <span class="">
+                      <span>TEN11 Tumbler </span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <!-- <span class="txt-dis"> -40 %</span> -->
+                  <img
+                    src="https://zandokh.com/image/cache/catalog/products/2025-08/2522506755/Umbraller%20Post2%20(3)-cr-450x672.jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">TEN 11</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $8.95</span>
+                      <!-- <span>US $17.59</span> -->
+                    </span>
+
+                    <span class="">
+                      <span>TEN11 Umbrella</span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <span class="txt-dis"> -39 %</span>
+                  <img
+                    src="	https://zandokh.com/image/cache/catalog/products/2025-07/2522505877/ZANDO0705202523443-cr-450x672.jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">TEN11</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $10.95</span>
+                      <span>US $17.95</span>
+                    </span>
+
+                    <span class="">
+                      <span>TEN11 Umbrella</span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide>
+          </swiper-container>
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+          <script>
+            const swiperEl = document.querySelector("swiper-container");
+            const swiper = swiperEl.swiper;
+
+            var appendNumber = 4;
+            var prependNumber = 1;
+            document
+              .querySelector(".prepend-2-slides")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                  "<swiper-slide>Slide " + --prependNumber + "</swiper-slide>",
+                  "<swiper-slide>Slide " + --prependNumber + "</swiper-slide>",
+                ]);
+              });
+            document
+              .querySelector(".prepend-slide")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                  "<swiper-slide>Slide " + --prependNumber + "</swiper-slide>"
+                );
+              });
+            document
+              .querySelector(".append-slide")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                  "<swiper-slide>Slide " + ++appendNumber + "</swiper-slide>"
+                );
+              });
+            document
+              .querySelector(".append-2-slides")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                  "<swiper-slide>Slide " + ++appendNumber + "</swiper-slide>",
+                  "<swiper-slide>Slide " + ++appendNumber + "</swiper-slide>",
+                ]);
+              });
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="containner-width" style="margin-top: 20px">
+      <div class="container">
+        <span class="text-container">
+          <span>New Footwear Drop !!</span>
+          <a href="">Shop more</a>
+        </span>
+        <!-- cart container -->
+        <div
+          class="cart-container"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <!-- cart -->
+
+          <swiper-container
+            class="mySwiper"
+            slides-per-view="4"
+            centered-slides="false"
+            space-between="10"
+            navigation="true"
+          >
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <span class="txt-dis"> -30 %</span>
+                  <img
+                    src="https://zandokh.com/image/catalog/products/2025-04/5152411099/ZANDO280320259806.jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">361° Sport</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $14.41</span>
+                      <span>US $20.59</span>
+                    </span>
+
+                    <span class="">
+                      <span>AG-Slipper </span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <span class="txt-dis"> -30 %</span>
+                  <img
+                    src="	https://zandokh.com/image/catalog/products/2025-05/5142411062%20replace/ZANDO2105202525831.jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">361° Sport</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $23.51</span>
+                      <span>US $33.59</span>
+                    </span>
+
+                    <span class="">
+                      <span>Basketball Sandals </span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <span class="txt-dis"> -50 %</span>
+                  <img
+                    src="https://zandokh.com/image/cache/catalog/products/2025-01/5162408039/IMG_0172-cr-450x672.jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">361° Sport</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $24.30</span>
+                      <span>US $48.59</span>
+                    </span>
+
+                    <span class="">
+                      <span>Lightspeed Running Sneakers</span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide class="cart">
+              <div class="">
+                <div class="img">
+                  <span class="txt-dis"> -50 %</span>
+                  <img
+                    src="	https://zandokh.com/image/cache/catalog/products/2025-02/5162408043%20Replace/IMG_0198-cr-450x672.jpg"
+                    alt=""
+                  />
+                  <span class="text-zando">361° Sport</span>
+                </div>
+
+                <div class="text-cart">
+                  <span class="text-cart-left">
+                    <span>
+                      <span>US $37.98</span>
+                      <span>US $75.95</span>
+                    </span>
+
+                    <span class="">
+                      <span>Cushion Runing Sneakers</span>
+                    </span>
+                  </span>
+
+                  <span class="icon"><i class="fa-solid fa-heart"></i> </span>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide>
+          </swiper-container>
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+          <script>
+            const swiperEl = document.querySelector("swiper-container");
+            const swiper = swiperEl.swiper;
+
+            var appendNumber = 4;
+            var prependNumber = 1;
+            document
+              .querySelector(".prepend-2-slides")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                  "<swiper-slide>Slide " + --prependNumber + "</swiper-slide>",
+                  "<swiper-slide>Slide " + --prependNumber + "</swiper-slide>",
+                ]);
+              });
+            document
+              .querySelector(".prepend-slide")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                  "<swiper-slide>Slide " + --prependNumber + "</swiper-slide>"
+                );
+              });
+            document
+              .querySelector(".append-slide")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                  "<swiper-slide>Slide " + ++appendNumber + "</swiper-slide>"
+                );
+              });
+            document
+              .querySelector(".append-2-slides")
+              .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                  "<swiper-slide>Slide " + ++appendNumber + "</swiper-slide>",
+                  "<swiper-slide>Slide " + ++appendNumber + "</swiper-slide>",
+                ]);
+              });
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <footer class="containner-width"
+      <div class="footer">
+              <div class="box-footer">
+                  <h1>ZANDO APP</h1>
+                  <img src="https://i.pinimg.com/736x/9a/9a/16/9a9a16b12880f1f14dbf3fb2ad64bf95.jpg" alt="">
+              </div>
+              <div class="box-footer"> 
+                <h1>LOYALTY</h1>
+                <ul>
+                  <li>
+                    <a href="">
+                      <i class="fa-solid fa-hand-holding-heart"></i>Membership&
+
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="box-footer">
+                <h1>Follow Us</h1>
+                <ul>
+                  <li>
+                    <a href=""><i class="fa-brands fa-facebook"></i>Facebook</a>
+
+                  </li>
+                  <li>
+                    <a href=""> <i class="fa-brands fa-instagram"> </i> Instagram</a>
+                  </li>
+                </ul>
+              </div>
+               <div class="box-footer">
+                <h1>CUSTOMER SERVICES</h1>
+                <ul>
+                  <li>
+                    <a href=""><i class="fa-brands fa-facebook"></i>Facebook</a>
+
+                  </li>
+                  <li>
+                    <a href=""> <i class="fa-brands fa-instagram"> </i> Instagram</a>
+                  </li>
+                </ul>
+              </div>
+               <div class="box-footer">
+                <h1>Contact Us</h1>
+               </div>
+                <div class="box-footer footer-img">
+                <h1>WE ACCEPT</h1>
+                <img src="https://zandokh.com/image/catalog/logo/web-footer/We-accept-payment–for-web-footer-1.png" alt="">
+                </div>
+        </div>
+               <div class="box-footer">
+                <span>2015 -2025 Zando. All rights reserved.</span>
+               </div>
+    </footer>
+
+  </body>
+</html>
+
+<script>
+  AOS.init();
+</script>
